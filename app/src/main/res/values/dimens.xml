@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="large_half">160px</dimen>
+
+    <dimen name="step_count">30sp</dimen>
+    <dimen name="pace">30sp</dimen>
+    <dimen name="desired_pace">24sp</dimen>
+    <dimen name="desired_pace_width">100sp</dimen>
+    <dimen name="value">55sp</dimen>
+    <dimen name="value_distance">45sp</dimen>
+    <dimen name="value_chronmeter">45sp</dimen>
+
+    <dimen name="button">52sp</dimen>
+    <dimen name="button_sign">26sp</dimen>
+    <dimen name="units">25sp</dimen>
+    <dimen name="units_settings">18sp</dimen>
+    <dimen name="margin">10px</dimen>
+    <dimen name="padding">5px</dimen>
+    <dimen name="padding_left">150px</dimen>
+    <dimen name="margintop">15px</dimen>
+    <dimen name="row_spacing">10px</dimen>
+    <dimen name="distance">20px</dimen>
+    <dimen name="textgap">20px</dimen>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">计步器</string>
+    <string name="notification_subtitle">计算您的步数</string>
+
+    <string name="started">计步器启动.</string>
+    <string name="stopped">计步器停止.</string>
+
+    <string name="steps">步</string>
+    <string name="title_pedometer">计步</string>
+    <string name="title_distance">里程</string>
+    <string name="title_cal">燃烧</string>
+    <string name="unit_cal">卡路里</string>
+    <string name="kilometers">公里</string>
+    <string name="meters">米</string>
+    <string name="steps_per_minute">步数 / 分钟</string>
+    <string name="kilometers_per_hour">公里 / 小时</string>
+    <string name="miles_per_hour">英里 / 小时</string>
+    <string name="calories_burned">消耗卡路里</string>
+    <string name="centimeters">厘米</string>
+    <string name="inches">英寸</string>
+    <string name="kilograms">千克</string>
+    <string name="pounds">磅</string>
+
+        <string name="desired_pace">预期步数:</string>
+    <string name="desired_speed">预期速度:</string>
+
+    <string name="pause">暂停</string>
+    <string name="resume">重新开始</string>
+    <string name="reset">重置</string>
+    
+    <!-- Settings -->
+    <string name="settings">设置</string>
+    <string name="activity_settings">计步器设置</string>
+    <string name="steps_settings_title">基本设置</string>
+    <string name="sensitivity_setting">灵敏度</string>
+    <string name="sensitivity_setting_details">校准计步器</string>
+    <string name="sensitivity_setting_title">选择灵敏度</string>
+    <string name="very_high">非常高</string>
+    <string name="high">高</string>
+    <string name="medium">一般</string>
+    <string name="low">低</string>
+    <string name="very_low">非常低</string>
+    <string name="units_setting">单位</string>
+    <string name="units_setting_details">英制/公制 单位</string>
+    <string name="units_setting_title">选择你的计算单位</string>
+    <string name="units_metric">公制 (公里)</string>
+    <string name="units_imperial">英制 (英里)</string>
+    <string name="step_length_setting">步长</string>
+        <string name="step_length_setting_details">用于计算路程，速度以及卡路里的消耗</string>
+    <string name="step_length_setting_title">请输入你的步长</string>
+    <string name="body_weight_setting">体重</string>
+    <string name="body_weight_setting_details">计算卡路里</string>
+    <string name="body_weight_setting_title">请输入你的体重</string>
+    <string name="exercise_type_setting">运动类型</string>
+    <string name="exercise_type_setting_details">计算卡路里</string>
+    <string name="exercise_type_setting_title">选择运动类型</string>
+    <string name="exercise_type_running">跑步</string>
+    <string name="exercise_type_walking">走路</string>
+    <string name="maintain_setting">保持 步幅/速度</string>
+    <string name="maintain_setting_details">保持步幅/速度</string>
+    <string name="maintain_setting_title">保持:</string>
+    <string name="maintain_nothing">无</string>
+    <string name="maintain_pace">步幅</string>
+    <string name="maintain_speed">速度</string>
+    <string name="incorrect_step_length">错误的步长设置! 请重新调整!</string>
+    <string name="title_speed">速度</string>
+    <string name="unit_distance">米</string>
+    <string name="unit_step">步</string>
+    <string name="unit_speed">米/秒</string>
+    <string name="quit_msg">如果退出，将不能记录您的足迹!</string>
+    <string name="quit_btn">确认退出</string>
+    <string name="run_background">后台运行</string>
+    <string name="quit">离开</string>
+    <string name="body_height">身高</string>
+    <string name="body_weight">体重</string>
+    <string name="step_length">步幅</string>
+    <string name="unit_height">厘米</string>
+    <string name="unit_weight">千克</string>
+    <string name="unit_length">厘米</string>
+
+</resources>

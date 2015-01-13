@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+
+<com.android.gomtel.pedometer.layout.ScrollLayout
+    android:id="@+id/sliding_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/setting_bg"
+        >
+        <TextView
+            android:id="@+id/title_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_marginTop="5px"
+            android:text="@string/settings"
+            android:textColor="#FF000000"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal"
+            >
+            <TextView android:id="@+id/height"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40px"
+                android:text="@string/body_height"
+                />
+            <EditText android:id="@+id/enter_height"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:singleLine="true"
+                android:numeric="decimal"
+                />
+            <TextView android:id="@+id/unit_height"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/textgap"
+                android:text="@string/unit_height"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            >
+            <TextView android:id="@+id/weight"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40px"
+                android:text="@string/body_weight"
+                />
+            <EditText android:id="@+id/enter_weight"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:singleLine="true"
+                android:numeric="decimal"
+                />
+            <TextView android:id="@+id/unit_weight"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/textgap"
+                android:text="@string/unit_weight"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            >
+            <TextView android:id="@+id/step_length"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40px"
+                android:text="@string/step_length"
+                />
+            <EditText android:id="@+id/enter_step_length"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:singleLine="true"
+                android:numeric="decimal"
+                />
+            <TextView android:id="@+id/unit_step_length"
+                android:textSize="@dimen/units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/textgap"
+                android:text="@string/unit_length"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pedometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView android:id="@+id/step_value"
+            android:textSize="@dimen/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <TextView android:id="@+id/step_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/step_value"
+            android:layout_marginLeft="5px"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/units"
+            android:text="@string/unit_step"/>
+    </RelativeLayout>
+        <ImageView android:id="@+id/icon_pedometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/footprint"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView android:id="@+id/distance_value"
+                android:textSize="@dimen/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+            <TextView android:id="@+id/distance_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/distance_value"
+                android:layout_marginLeft="5px"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/units"
+                android:text="@string/unit_distance"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/icon_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/distance"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/calory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView android:id="@+id/calories_value"
+                android:textSize="@dimen/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+            <TextView android:id="@+id/calories_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/calories_value"
+                android:layout_marginLeft="5px"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/units"
+                android:text="@string/unit_cal"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/icon_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/calory"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Chronometer
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:textSize="@dimen/value_chronmeter"
+            android:layout_marginTop="@dimen/margintop"
+            android:gravity="center_horizontal" />
+        <ImageView android:id="@+id/icon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/time"
+            />
+
+
+    </LinearLayout>
+    </com.android.gomtel.pedometer.layout.ScrollLayout>
+
+</LinearLayout>
