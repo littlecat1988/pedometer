@@ -127,33 +127,33 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView android:id="@+id/step_value"
-            android:textSize="@dimen/value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            />
-        <TextView android:id="@+id/step_units"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/step_value"
-            android:layout_marginLeft="5px"
-            android:layout_centerInParent="true"
-            android:textSize="@dimen/units"
-            android:text="@string/unit_step"/>
-    </RelativeLayout>
         <ImageView android:id="@+id/icon_pedometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="51px"
             android:background="@drawable/background"
             android:src="@drawable/footprint"
             />
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView android:id="@+id/step_value"
+                android:textSize="@dimen/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+            <TextView android:id="@+id/step_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/step_value"
+                android:layout_marginLeft="5px"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/units"
+                android:text="@string/unit_step"/>
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -163,6 +163,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+        <ImageView android:id="@+id/icon_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/distance"
+            />
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -183,13 +191,6 @@
                 android:textSize="@dimen/units"
                 android:text="@string/unit_distance"/>
         </RelativeLayout>
-        <ImageView android:id="@+id/icon_distance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/background"
-            android:src="@drawable/distance"
-            />
 
 
     </LinearLayout>
@@ -199,6 +200,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+        <ImageView android:id="@+id/icon_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/calory"
+            />
+
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -219,13 +229,6 @@
                 android:textSize="@dimen/units"
                 android:text="@string/unit_cal"/>
         </RelativeLayout>
-        <ImageView android:id="@+id/icon_calories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/background"
-            android:src="@drawable/calory"
-            />
 
 
     </LinearLayout>
@@ -235,20 +238,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+        <ImageView android:id="@+id/icon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:src="@drawable/time"
+            />
         <Chronometer
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/chronometer"
             android:textSize="@dimen/value_chronmeter"
-            android:layout_marginTop="@dimen/margintop"
             android:gravity="center_horizontal" />
-        <ImageView android:id="@+id/icon_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/background"
-            android:src="@drawable/time"
-            />
+
 
 
     </LinearLayout>
